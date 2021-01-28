@@ -1,5 +1,5 @@
 # TerraClimate-import-MATLAB
-Short script for downloading time-series, maps and more from TerraClimate (http://www.climatologylab.org/terraclimate.html). 
+Short script for downloading time-series, maps and more from TerraClimate (http://www.climatologylab.org/terraclimate.html). For example, see the time-averaged precipitation map below.
 
 ![Precipitation map](ppt_map.png)
 

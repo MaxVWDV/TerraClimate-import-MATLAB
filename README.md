@@ -1,7 +1,7 @@
 # TerraClimate-import-MATLAB
 Short script for downloading time-series, maps and more from TerraClimate (http://www.climatologylab.org/terraclimate.html). 
 
-![alt text](https://github.com/MaxVWDV/TerraClimate-import-MATLAB/ppt_map.png?raw=true)
+!(https://github.com/MaxVWDV/TerraClimate-import-MATLAB/ppt_map.png?)
 
 This is a convenient way of getting climate data into a usable format. The script can be used to download data from anywhere on earth, in the form of 3D data arrays (lat x long x time), 2D time averaged maps (lat x long) and 1D spatially averaged time series (time).
 

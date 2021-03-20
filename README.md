@@ -1,5 +1,5 @@
 # TerraClimate-import-MATLAB
-Short script for downloading time-series, maps and more from TerraClimate (http://www.climatologylab.org/terraclimate.html). For example, see the time-averaged precipitation map below.
+Short script for downloading time-series, maps and more from TerraClimate (http://www.climatologylab.org/terraclimate.html). For example, see the time-averaged precipitation map below. TerraClimate has global climate data at ~4km spatial and monthly temporal resolution, for the years 1958-2019.
 
 ![Precipitation map](ppt_map.png)
 
@@ -21,14 +21,20 @@ The datasets that can be accessed are:
     vpd (Vapor Pressure Deficit, average for month)
     PDSI (Palmer Drought Severity Index, at end of month)
     
-To use, the syntax is the following:
+The datasets may either be loaded into MATLAB (use terraclimate_fetch) or downloaded directly onto your computer as a geotiff or .csv (terraclimate_write).
+
+To load data into MATLAB, the syntax is the following:
 [vals,time] = terraclimate_fetch(lat_bounds,lon_bounds,years,months,var,((averaging)));
+
+or to download directly to your laptop:
+
+terraclimate_fetch(folder,filename,lat_bounds,lon_bounds,years,months,var,averaging);
 
 or for example
 
 [vals,time] = terraclimate_fetch([50 51.5],[-75.5 -74.5],[2000 2015],[1 12],'ppt','timeseries');
  
- The above will download a precipitation timeseries from Jan 2000 to Dec
+ The above will load into your MATLAB workspace a precipitation timeseries from Jan 2000 to Dec
  2015, spatially averaged over the region 50 to 51.5 N latitude, -75.5 to -74.5 W
  longitude.
  
@@ -36,4 +42,8 @@ or for example
  
  'help terraclimate_fetch'
  
- into MATAB's command line for more information.
+ or 
+ 
+ 'help terraclimate_write'
+ 
+ into MATLAB's command line for more information.

@@ -28,7 +28,7 @@ To load data into MATLAB, the syntax is the following:
 
 or to download directly to your laptop:
 
-terraclimate_fetch(folder,filename,lat_bounds,lon_bounds,years,months,var,averaging);
+terraclimate_write(folder,filename,lat_bounds,lon_bounds,years,months,var,averaging);
 
 or for example
 

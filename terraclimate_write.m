@@ -3,10 +3,10 @@ function terraclimate_write(folder,filename,lat_bounds,lon_bounds,years,months,v
 % a .geotiff (spatial maps) or as a .csv (timeseries).
 %
 %Usage:
-%terraclimate_fetch(folder,filename,lat_bounds,lon_bounds,years,months,var,averaging);
+%terraclimate_write(folder,filename,lat_bounds,lon_bounds,years,months,var,averaging);
 %
 %Example:
-%terraclimate_fetch(pwd,'test_precipitation',[50 51.5],[-75.5 -74.5],[2000 2015],[1 12],'ppt','timeseries');
+%terraclimate_write(pwd,'test_precipitation',[50 51.5],[-75.5 -74.5],[2000 2015],[1 12],'ppt','timeseries');
 %
 %The above will download a precipitation timeseries from Jan 2000 to Dec
 %2015, spatially averaged over the region 50 to 51.5 N latitude, -75.5 to -74.5 W
